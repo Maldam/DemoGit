@@ -24,6 +24,16 @@ CREATE TABLE Class (
 );
 
 
+CREATE TABLE Supply(
+    Id UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID(),
+    Name VARCHAR(100) NOT NULL,
+    Description VARCHAR(255),
+
+    CONSTRAINT PK_Supply PRIMARY KEY (Id),
+);
+
+
+
 -- Relation 1-N : Entity - Class
 
 ALTER TABLE Entity
